@@ -308,7 +308,8 @@
         width: 270px;
     }
 
-    .top {
+
+    .new-top {
         text-align: center;
         margin-top: 40px;
         margin-bottom: 28px;
@@ -317,8 +318,7 @@
         font-size: 14px;
         line-hight: 1.3;
     }
-
-    .top::after {
+    .new-top::after {
         content: "";
         display: block;
         position: relative;
@@ -330,7 +330,7 @@
         background: #b59f5b;
     }
 
-    .bottom {
+    .tegs-top {
         text-align: center;
         margin-top: 40px;
         margin-bottom: 28px;
@@ -339,7 +339,93 @@
         font-size: 14px;
         line-hight: 1.3;
     }
-    .bottom::after {
+
+    .tegs-top::after {
+        content: "";
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 14px;
+        width: 66px;
+        height: 3px;
+        background: #b59f5b;
+    }
+    .mailing {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 28px;
+        font-family: open-sans-b, sans-serif;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-hight: 1.3;
+
+    }
+    .mailing::after {
+        content: "";
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 14px;
+        width: 66px;
+        height: 3px;
+        background: #b59f5b;
+    }
+
+    .theme-top {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 28px;
+        font-family: open-sans-b, sans-serif;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-hight: 1.3;
+    }
+    .theme-top::after {
+        content: "";
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 14px;
+        width: 66px;
+        height: 3px;
+        background: #b59f5b;
+    }
+
+    .trends-top {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 28px;
+        font-family: open-sans-b, sans-serif;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-hight: 1.3;
+    }
+
+    .trends-top::after {
+        content: "";
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 14px;
+        width: 66px;
+        height: 3px;
+        background: #b59f5b;
+    }
+
+    .trends-bottom {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 28px;
+        font-family: open-sans-b, sans-serif;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-hight: 1.3;
+    }
+    .trends-bottom::after {
         content: "";
         display: block;
         position: relative;
@@ -378,6 +464,9 @@
     /*shop*/
     .title-shop {
         position: center;
+        position: relative;
+        left: 210px;
+
     }
     .shop {
         display: flex;
@@ -390,6 +479,8 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        position: relative;
+        left: 50px;
 
     }
     .product-image {
@@ -474,7 +565,7 @@
     .search-button {
         border: none;
         width: 47px;
-        background-image: url(../images/search.svg);
+        background-image: url(../svg/search.svg);
         background-repeat: no-repeat;
         background-size: 16px;
         background-position: center;
@@ -630,23 +721,23 @@
     }
 
     .social-icon_twitter {
-        background-image: url(../images/social/004-twitter.svg);
+        background-image: url(../svg/004-twitter.svg);
     }
 
     .social-icon_pinterest {
-        background-image: url(../images/social/001-pinterest.svg);
+        background-image: url(../svg/001-pinterest.svg);
     }
 
     .social-icon_facebook {
-        background-image: url(../images/social/002-facebook-logo.svg);
+        background-image: url(../svg/002-facebook-logo.svg);
     }
 
     .social-icon_instagram {
-        background-image: url(../images/social/005-instagram.svg);
+        background-image: url(../svg/005-instagram.svg);
     }
 
     .social-icon_tumblr {
-        background-image: url(../images/social/003-tumblr.svg);
+        background-image: url(../svg/003-tumblr.svg);
     }
 
     .copyright {
@@ -656,7 +747,174 @@
         font-size: 12px;
         text-align: center
     }
+/*popup*/
+
+.pop_up {
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0, .8);
+    position:fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
 }
+.pop_up_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+.pop_up_body {
+    margin: auto;
+    width: 390px;
+    height: 590px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 100px 15px 110px 15px;
+}
+.pop_up_body_title {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 28px;
+    font-family: open-sans-b, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-hight: 1.3;
+    position: relative;
+    bottom: 50px;
+}
+.pop_up_body_title::after {
+    content: "";
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14px;
+    width: 66px;
+    height: 3px;
+    background: #b59f5b;
+}
+.pop_up_form {
+    position: relative;
+    bottom: 30px;
+}
+.input-group-number1 input {
+    display: block;
+    margin: 25px auto 0px auto;
+    width: 330px;
+    padding: 17px 20px;
+    background-color: #f4f7f6;
+    font-family: open-sans-r, sans-serif;
+    font-weight: 500px;
+    font-size: 14px;
+    color: #9c9e9d;
+    border: none;
+    position: relative;
+    bottom: 65px;
+}
+.input-group-number1 p {
+    font-family: open-sans-r, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 15px;
+    position:relative;
+    padding-bottom:50px;
+}
+
+.input-group-number2 input {
+    display: block;
+    margin: 25px auto 0px auto;
+    width: 330px;
+    height: 130px;
+    padding: 17px 20px;
+    background-color: #f4f7f6;
+    font-family: open-sans-r, sans-serif;
+    font-weight: 500px;
+    font-size: 14px;
+    color: #9c9e9d;
+    border: none;
+    position: relative;
+    bottom: 65px;
+}
+.radio {
+    display: none;
+}
+
+.radio-group-text {
+    position: relative;
+    top: 5px;
+}
+
+.radio-group-text-fake {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #b59f5b;
+    position: relative;
+    top: 7px;
+    border-radius: 50%;
+}
+.radio-group-text-fake::before {
+    content: "";
+    position: relative;
+    bottom: 100%;
+    left: 50%;
+    display: block;
+    transform: translate(-50%, 50%);
+    width: 19px;
+    height: 18px;
+    background: url("../svg/form-circle.svg") no-repeat;
+    background-position: center;
+    background-size: 14px;
+    opacity: 0;
+    transition: .2s;
+    border-radius: 50%;
+}
+
+.radio:checked + .radio-group-text-fake::before {
+    opacity: 1;
+}
+
+.input-group-number2 p {
+    font-family: open-sans-r, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 15px;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.pop_up_body button {
+    margin-top: 18px;
+    height: 48px;
+    border: none;
+    width: 330px;
+    background-color: #b59f5b;
+    font-family: open-sans-b, sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 14px;
+    position: relative;
+    bottom: 65px;
+}
+
+.pop_up_close {
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    font-size: 20px;
+}
+
+.radio-form {
+    position: relative;
+    bottom: 35px;
+    font-family: open-sans-r, sans-serif;
+    font-size: 14px;
+    color: black;
+    text-align: left;
+    margin-left: 15px;
+}
+
 
 @media (min-width: 768px) and (max-width: 1199px) {
 
